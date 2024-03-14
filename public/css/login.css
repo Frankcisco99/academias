@@ -1,0 +1,87 @@
+.contenedor-login{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+    height: 100vh;
+}
+
+.error-container{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.error-style{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+
+.contenedor-login img{
+    width: 100px;
+    height: 100px;
+}
+
+.formulario-login{
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.formulario-login div{
+    margin-bottom: 20px;
+}
+
+.formulario-login label{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.formulario-login input{
+    width: 100%;
+    padding: 10px;
+}
+
+.formulario-login input[type=submit]{
+    background-color: #4659FF;
+    cursor: pointer;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.olvide-link{
+    text-align: center;
+}
+
+.olvide-link a{
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+}
+
+
+@media (min-width: 992px) {
+    .formulario-login{
+        width: 500px;
+    }
+
+    .error-container{
+        width: 500px;
+    }
+    .contenedor-login img{
+        width: 150px;
+        height: 150px;
+    }
+}

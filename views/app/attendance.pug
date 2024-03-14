@@ -1,0 +1,19 @@
+extends ../layout/index
+
+block styles 
+    link(rel="stylesheet", href="/css/attendance.css")
+block contenido
+    div(class="attendance-container")
+            h1 Asistencia
+            form(class="att-form" method="POST" action=`/attendance/${academia.id}`)
+                div(class="date")
+                    label Fecha:
+                    input(type="date" name="fecha")
+                div(class="student-table")
+                        p Nombre
+                        p Asistencia
+                each alumno in academia.alumnos
+                        div(class="student-table")    
+                            p= alumno.nombre
+                            input(type='checkbox' name='presentes' value=alumno.id checked)
+                input(type="submit", value="Agregar Asistencia" class="submit-btn" id="guardar-asistencia-btn")

@@ -1,0 +1,24 @@
+extends ../layout/index
+
+block styles
+    link(rel="stylesheet", href="/css/login.css")
+
+block contenido
+    div(class="contenedor-login")
+        img(src="/img/logo.png", alt="logotipo icon")
+        h1 INICIAR SESIÓN
+        form(method="POST" action="/auth/login" class="formulario-login") 
+            div
+                label(for="email") Usuario
+                input(type="email" id="email" name="email")
+            div
+                label(for="password") Contraseña
+                input(type="password" id="password" name="password")
+
+            div
+                input(type="submit", value="Iniciar Sesión")
+
+            div(class="olvide-link")
+                a(href="/auth/signup") Crear cuenta
+            div(class="olvide-link")
+                a(href="/auth/olvide-password") Olvide mi contraseña

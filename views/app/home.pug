@@ -1,0 +1,25 @@
+extends ../layout/index
+block styles
+    link(rel="stylesheet", href="/css/home.css")
+block contenido
+    div(class="home-contenedor")
+        div(class="profile")
+            img(src="/img/user.png", alt="profile image")
+            h2= usuario.nombre
+            p= usuario.email
+            a(href="/new-password") Cambiar Contraseña
+        
+        div(class="menu")
+            div(class="menu-fun")
+                img(src="/img/schedule.png", alt="asistencia png")
+                a(href="/academias") Añadir Asistencia
+
+            div(class="menu-fun")
+                img(src="/img/add-user.png", alt="añadir alumno png")
+                a(href="/add") Agregar Alumno
+
+            div(class="menu-fun" )
+                img(src="/img/shutdown.png", alt="logout png")
+                a(href="/logout") Cerrar Sesión
+block scripts
+    script(src="/js/home.js") 

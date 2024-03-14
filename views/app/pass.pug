@@ -1,0 +1,21 @@
+extends ../layout/index
+
+block styles 
+    link(rel="stylesheet", href="/css/add.css")
+block contenido
+    if errores
+            div(class="error-container")
+                each error in errores
+                    p(class="error-style")= error.msg
+    div(class="add-container")
+        h1 Cambiar Contraseña
+        form(method="POST" action="/new-password")
+            div
+                label(for="oldPass") Contraseña Antigua
+                input(type="password" id="oldPass" name="oldPass")
+            div
+                label(for="newPass") Contraseña Nueva
+                input(type="password" id="newPass" name="newPass")
+
+            input(type="submit", value="Cambiar Contraseña" class="add-btn")   
+            

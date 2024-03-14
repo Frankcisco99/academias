@@ -1,0 +1,75 @@
+.home-contenedor{
+    width: 100vw;
+    height: 100vh;
+    padding: 10px;
+}
+.contenedor-academias{
+    width: 100vw;
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 90%;
+    background-color: white;
+    padding: 10px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 5px;
+    
+}
+
+.profile h2, p{
+    color: gray;
+}
+.titulo-academias{
+    text-align: center;
+}
+.profile a{
+    text-decoration: none;
+    color: white;
+    background-color: #4659FF;
+    padding: 10px;
+    border-radius: 5px;
+}
+.profile img{
+    height: 100px;
+    width: 100px;
+    
+}
+
+.menu{
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 15px;
+    border-radius: 5px;
+    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+
+
+.menu-fun{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.menu-fun img{
+    height: 50px;
+    width: 50px;
+    color: #4659FF;
+}

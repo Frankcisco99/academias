@@ -1,0 +1,28 @@
+extends ../layout/index
+
+block styles 
+    link(rel="stylesheet", href="/css/add.css")
+block contenido
+    div(class="add-container")
+        h1 Agregar Alumno
+        form(method="POST" action="/add")
+            div
+                label(for="nombre") Nombre y Apellido
+                input(type="text" id="nombre" name="nombre")
+
+            div
+                label(for="Edad") Edad
+                input(type="number" id="edad" name="edad")
+            
+            div
+                label(for="curso") Curso
+                input(type="text" id="curso" name="curso")
+            div
+                label(for="academias") Academia
+                select(id="academias" name="academias")
+                    option(value="") - Seleccione -
+                    each academia in academias 
+                        option(value=academia.id selected= datos.academia ? datos.academia == academia.id ? true : false : null)= academia.nombre
+
+            input(type="submit", value="Agregar Alumno" class="add-btn")   
+            

@@ -1,0 +1,16 @@
+extends ../layout/index
+
+block styles 
+    link(rel="stylesheet", href="/css/home.css")
+block contenido
+    div(class="contenedor-academias")
+        h1(class="titulo-academias") Academias
+        div(class="menu")
+            each academia in academias 
+                div(class="menu-fun")
+                    img(src="/img/schedule.png", alt="asistencia png")
+                    a(href=`/attendance/${academia.id}`)= academia.nombre
+
+
+
+

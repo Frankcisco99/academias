@@ -1,0 +1,112 @@
+
+.attendance-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 50px;
+    gap: 30px;
+}
+
+.attendance-container h1{
+    text-transform: uppercase;
+    color: gray;
+}
+
+.date{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.date input,select{
+    width: 100%;
+}
+.submit-btn{
+    width: 100%;
+    background-color: #4659FF;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 0;
+    padding: 10px;
+}
+
+.s-button{
+    background-color: #4659FF;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 0;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.student-table{
+    display: flex;
+    padding: 10px;
+}
+
+.student-table p{
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.student-table p:last-child{
+    text-align: end;
+}
+
+.student-attendance{
+    padding: 10px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+
+}
+
+.student-attendance label{
+    width: 100%;
+}
+
+.student-attendance input{
+    height: 20px;
+    width: 20px;
+}
+
+
+.att-form{
+    width: 90%;
+    margin: auto;
+    background-color: white;
+    padding: 10px;
+}
+
+
+
+@media (min-width: 992px) {
+    .select-container{
+        width: 90%;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .select-container select{
+        width: 45%;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .select-container input{
+        width: 45%;
+        padding: 10px;
+    }   
+}
